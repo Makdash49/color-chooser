@@ -18,15 +18,17 @@ var Comment = React.createClass({
 
   render: function() {
     var comm = this.rawMarkup().__html.substring(3).slice(0, -5)
+    var answer = myDiv(comm)
+    console.log("answer: ", answer)
+    console.log("divStyle: ", divStyle)
     return (
       <div className="comment">
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
-        <div style={divStyle}>
-          <span dangerouslySetInnerHTML={this.rawMarkup()} />
-          {console.log(comm)}
-        </div>
+          <div style={answer}>
+            heloo
+          </div>
       </div>
     );
   }
@@ -148,6 +150,14 @@ var CommentForm = React.createClass({
 var divStyle = {
   backgroundColor: 'red',
 };
+
+var myDiv = function (colo){
+  console.log("First line of myDiv")
+  console.log("The color:", colo);
+  return (
+    {backgroundColor: colo}
+    )
+}
 
 ReactDOM.render(
   <CommentBox url="/api/comments" pollInterval={2000} />,
