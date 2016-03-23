@@ -145,7 +145,7 @@ var CommentForm = React.createClass({
 
 
 var divStyle = {
-  color: 'red',
+  backgroundColor: 'red',
   // backgroundImage: 'url(' + imgUrl + ')',
   // WebkitTransition: 'all', // note the capital 'W' here
   // msTransition: 'all' // 'ms' is the only lowercase vendor prefix
