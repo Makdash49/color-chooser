@@ -1,37 +1,3 @@
 [
-    {
-        "id": 1388534400000,
-        "author": "Pete Hunt",
-        "text": "Hey there!"
-    },
-    {
-        "id": 1420070400000,
-        "author": "Paul O’Shannessy",
-        "text": "React is *great*!"
-    },
-    {
-        "id": 1458765819832,
-        "author": "Mark",
-        "text": "red"
-    },
-    {
-        "id": 1458766013451,
-        "author": "Steve",
-        "text": "blue"
-    },
-    {
-        "id": 1458769933757,
-        "author": "Face",
-        "text": "Green"
-    },
-    {
-        "id": 1458770203943,
-        "author": "Joe",
-        "text": "yello"
-    },
-    {
-        "id": 1458770213710,
-        "author": "Joe",
-        "text": "yellow"
-    }
+
 ]
