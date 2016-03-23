@@ -76,6 +76,9 @@ var CommentBox = React.createClass({
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data={this.state.data} />
+        <div style={divStyle}>
+          Hellow
+        </div>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
@@ -139,6 +142,14 @@ var CommentForm = React.createClass({
     );
   }
 });
+
+
+var divStyle = {
+  color: 'red',
+  // backgroundImage: 'url(' + imgUrl + ')',
+  // WebkitTransition: 'all', // note the capital 'W' here
+  // msTransition: 'all' // 'ms' is the only lowercase vendor prefix
+};
 
 ReactDOM.render(
   <CommentBox url="/api/comments" pollInterval={2000} />,
