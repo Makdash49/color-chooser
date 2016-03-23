@@ -24,6 +24,7 @@ var Comment = React.createClass({
         </h2>
         <div style={divStyle}>
           <span dangerouslySetInnerHTML={this.rawMarkup()} />
+          {console.log(this.rawMarkup().__html.substring(3).slice(0, -5))}
         </div>
       </div>
     );
@@ -78,9 +79,6 @@ var CommentBox = React.createClass({
       <div className="commentBox">
         <h1>Comments</h1>
         <CommentList data={this.state.data} />
-        <div style={divStyle}>
-          Hellow
-        </div>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
