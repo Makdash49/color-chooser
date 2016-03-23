@@ -17,6 +17,7 @@ var Comment = React.createClass({
   },
 
   render: function() {
+    var comm = this.rawMarkup().__html.substring(3).slice(0, -5)
     return (
       <div className="comment">
         <h2 className="commentAuthor">
@@ -24,7 +25,7 @@ var Comment = React.createClass({
         </h2>
         <div style={divStyle}>
           <span dangerouslySetInnerHTML={this.rawMarkup()} />
-          {console.log(this.rawMarkup().__html.substring(3).slice(0, -5))}
+          {console.log(comm)}
         </div>
       </div>
     );
@@ -146,9 +147,6 @@ var CommentForm = React.createClass({
 
 var divStyle = {
   backgroundColor: 'red',
-  // backgroundImage: 'url(' + imgUrl + ')',
-  // WebkitTransition: 'all', // note the capital 'W' here
-  // msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };
 
 ReactDOM.render(
