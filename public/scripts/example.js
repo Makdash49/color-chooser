@@ -155,7 +155,8 @@ var myDiv = function (colo){
   console.log("First line of myDiv")
   console.log("The color:", colo);
   return (
-    {backgroundColor: colo}
+    {backgroundColor: colo,
+      width: 50}
     )
 }
 
