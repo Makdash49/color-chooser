@@ -23,9 +23,9 @@ var Comment = React.createClass({
     console.log("divStyle: ", divStyle)
     return (
       <div className="comment">
-        <h2 className="commentAuthor">
+        <h3 className="commentAuthor">
           {this.props.author}
-        </h2>
+        </h3>
           <div style={answer}>
             {comm}
           </div>
@@ -130,13 +130,13 @@ var CommentForm = React.createClass({
       <form className="commentForm" onSubmit={this.handleSubmit}>
         <input
           type="text"
-          placeholder="Your name"
+          placeholder="Your name?"
           value={this.state.author}
           onChange={this.handleAuthorChange}
         />
         <input
           type="text"
-          placeholder="Say something..."
+          placeholder="Favorite color?"
           value={this.state.text}
           onChange={this.handleTextChange}
         />
@@ -159,7 +159,7 @@ var myDiv = function (colo){
       width: 50,
       padding: 50,
       border: '5px solid black'}
-    )
+  )
 }
 
 ReactDOM.render(
