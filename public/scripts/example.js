@@ -27,7 +27,7 @@ var Comment = React.createClass({
           {this.props.author}
         </h2>
           <div style={answer}>
-            heloo
+            {comm}
           </div>
       </div>
     );
