@@ -26,9 +26,11 @@ var Comment = React.createClass({
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
+        <div style={{border: '1px solid black'}}>
           <div style={answer}>
             {comm}
           </div>
+        </div>
       </div>
     );
   }
