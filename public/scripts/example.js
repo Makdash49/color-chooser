@@ -80,7 +80,7 @@ var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        <h1>Comments</h1>
+        <h1>Color Chooser</h1>
         <CommentList data={this.state.data} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
@@ -156,7 +156,8 @@ var myDiv = function (colo){
   console.log("The color:", colo);
   return (
     {backgroundColor: colo,
-      width: 50}
+      width: 50,
+      padding: 50}
     )
 }
 
