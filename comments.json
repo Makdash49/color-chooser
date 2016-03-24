@@ -1,32 +1,3 @@
 [
-    {
-        "id": 1458781191403,
-        "author": "Mark",
-        "text": "red"
-    },
-    {
-        "id": 1458781227169,
-        "author": "Bob",
-        "text": "Blue"
-    },
-    {
-        "id": 1458781356806,
-        "author": "Steve",
-        "text": "green"
-    },
-    {
-        "id": 1458781591910,
-        "author": "Facebook",
-        "text": "orange"
-    },
-    {
-        "id": 1458781944880,
-        "author": "Alex",
-        "text": "white"
-    },
-    {
-        "id": 1458782448530,
-        "author": "Bob",
-        "text": "#0f0"
-    }
+
 ]
