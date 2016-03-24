@@ -26,11 +26,9 @@ var Comment = React.createClass({
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
-        <div style={{border: '1px solid black'}}>
           <div style={answer}>
             {comm}
           </div>
-        </div>
       </div>
     );
   }
@@ -159,7 +157,8 @@ var myDiv = function (colo){
   return (
     {backgroundColor: colo,
       width: 50,
-      padding: 50}
+      padding: 50,
+      border: '5px solid black'}
     )
 }
 
