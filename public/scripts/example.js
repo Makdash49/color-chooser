@@ -144,9 +144,9 @@ var CommentForm = React.createClass({
   }
 });
 
-var myDiv = function (colo){
+var myDiv = function (color){
   return (
-    {backgroundColor: colo,
+    {backgroundColor: color,
       width: 50,
       padding: 50,
       border: '5px solid black'}
