@@ -19,7 +19,6 @@ var Comment = React.createClass({
   render: function() {
     var comm = this.rawMarkup().__html.substring(3).slice(0, -5)
     var answer = myDiv(comm)
-    console.log("answer: ", answer)
     return (
       <div className="comment">
         <h3 className="commentAuthor">
@@ -146,8 +145,6 @@ var CommentForm = React.createClass({
 });
 
 var myDiv = function (colo){
-  console.log("First line of myDiv")
-  console.log("The color:", colo);
   return (
     {backgroundColor: colo,
       width: 50,
