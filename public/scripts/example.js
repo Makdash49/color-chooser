@@ -5,15 +5,15 @@ var Comment = React.createClass({
   },
 
   render: function() {
-    var comm = this.rawMarkup().__html.substring(3).slice(0, -5)
-    var answer = myDiv(comm)
+    var input = this.rawMarkup().__html.substring(3).slice(0, -5)
+    var answer = myDiv(input)
     return (
       <div className="comment">
         <h3 className="commentAuthor">
           {this.props.author}
         </h3>
           <div style={answer}>
-            {comm}
+            {input}
           </div>
       </div>
     );
