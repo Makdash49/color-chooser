@@ -1,17 +1,13 @@
 [
-    {
-        "id": 1458878835994,
-        "author": "10",
-        "text": "mauve"
-    },
+
     {
         "id": 1458878842374,
         "author": "20",
-        "text": "lavender"
+        "colo": "lavender"
     },
     {
         "id": 1458963114236,
         "author": "50",
-        "text": "green"
+        "colo": "green"
     }
 ]
