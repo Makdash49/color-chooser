@@ -9,6 +9,12 @@ body {
   padding-top: 50px;
 }
 
+#content {
+  height: 22em;
+
+
+} 
+
 
 a.button {
     -webkit-appearance: button;
