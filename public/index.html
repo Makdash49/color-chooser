@@ -6,28 +6,28 @@
 
     <style>
 
-    .bar {
-      fill: steelblue;
-    }
+      .bar {
+        fill: steelblue;
+      }
 
-    .bar:hover {
-      fill: brown;
-    }
+      .bar:hover {
+        fill: brown;
+      }
 
-    .axis {
-      font: 10px sans-serif;
-    }
+      .axis {
+        font: 10px sans-serif;
+      }
 
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: #000;
-      shape-rendering: crispEdges;
-    }
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
 
-    .x.axis path {
-      display: none;
-    }
+      .x.axis path {
+        display: none;
+      }
 
     </style>
 
@@ -57,6 +57,10 @@
       // the script tag loading scripts/example.js and start writing code here.
     </script>
 
+    <h3>
+      <a href="http://localhost:3000/"><u>Click for updated Graph!</u></a>
+    </h3>
+
     <script>
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -85,7 +89,6 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     d3.json("comments.json", function(error, data) {
-      console.log("*************", data)
       if (error) throw error;
 
       x.domain(data.map(function(d) { return d.text; }));
@@ -125,19 +128,6 @@
 
 
 
-
-
-
-
-
-
-
-      <p>
-      <p>
-      <p>
-      <h4>
-        <a href="http://localhost:3000/"><u>Click for updated Graph!</u></a>
-      </h4>
 
   </body>
 </html>
