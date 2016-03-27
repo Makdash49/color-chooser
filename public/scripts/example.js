@@ -9,9 +9,10 @@ var Comment = React.createClass({
     var answer = myDiv(input)
     return (
       <div className="comment">
-        <h3 className="commentAuthor">
-          {this.props.author}
-        </h3>
+        <h4 className="commentAuthor">
+          <h3></h3>
+          Quantity: {this.props.author}
+        </h4>
           <div style={answer}>
             {input}
           </div>
@@ -63,9 +64,10 @@ var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        <h1>Color Chooser</h1>
+        <h1>Count & Hue</h1>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
         <CommentList data={this.state.data} />
+        <h5></h5>
       </div>
     );
   }

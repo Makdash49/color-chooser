@@ -4,8 +4,11 @@ body {
   font-size: 15px;
   line-height: 1.7;
   margin: 0;
-  padding: 30px;
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-top: 20px;
 }
+
 
 a {
   color: #4183c4;
