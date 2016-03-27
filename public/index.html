@@ -88,8 +88,8 @@
       console.log("*************", data)
       if (error) throw error;
 
-      x.domain(data.map(function(d) { return d.letter; }));
-      y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+      x.domain(data.map(function(d) { return d.text; }));
+      y.domain([0, d3.max(data, function(d) { return d.author; })]);
 
       svg.append("g")
           .attr("class", "x axis")
@@ -110,14 +110,14 @@
           .data(data)
         .enter().append("rect")
           .attr("class", "bar")
-          .attr("x", function(d) { return x(d.letter); })
+          .attr("x", function(d) { return x(d.text); })
           .attr("width", x.rangeBand())
-          .attr("y", function(d) { return y(d.frequency); })
-          .attr("height", function(d) { return height - y(d.frequency); });
+          .attr("y", function(d) { return y(d.author); })
+          .attr("height", function(d) { return height - y(d.author); });
     });
 
     function type(d) {
-      d.frequency = +d.frequency;
+      d.author = +d.author;
       return d;
     }
 
