@@ -58,7 +58,7 @@
     </script>
 
     <h3>
-      <a href="http://localhost:3000/"><u>Click for updated Graph!</u></a>
+      <a href="http://localhost:3000/"><u>Click to Update Graph</u></a>
     </h3>
 
     <script>
@@ -92,7 +92,7 @@
       if (error) throw error;
 
       x.domain(data.map(function(d) { return d.text; }));
-      y.domain([0, d3.max(data, function(d) { return d.author; })]);
+      y.domain([0, d3.max(data, function(d) { return 100; })]);
 
       svg.append("g")
           .attr("class", "x axis")
