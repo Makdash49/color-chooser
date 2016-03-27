@@ -6,9 +6,6 @@
 
     <style>
 
-      .bar {
-        fill: steelblue;
-      }
 
       .bar:hover {
         fill: brown;
@@ -116,7 +113,8 @@
           .attr("x", function(d) { return x(d.text); })
           .attr("width", x.rangeBand())
           .attr("y", function(d) { return y(d.author); })
-          .attr("height", function(d) { return height - y(d.author); });
+          .attr("height", function(d) { return height - y(d.author); })
+          .attr("fill", function(d) {return d.text;});
     });
 
     function type(d) {
