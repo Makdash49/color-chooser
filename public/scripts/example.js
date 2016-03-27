@@ -64,8 +64,8 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h1>Color Chooser</h1>
-        <CommentList data={this.state.data} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <CommentList data={this.state.data} />
       </div>
     );
   }
