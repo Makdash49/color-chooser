@@ -117,7 +117,7 @@ var CommentForm = React.createClass({
       <form className="commentForm" onSubmit={this.handleSubmit}>
         <input
           type="text"
-          placeholder="How many?"
+          placeholder="How many?  1-100"
           value={this.state.author}
           onChange={this.handleAuthorChange}
         />
