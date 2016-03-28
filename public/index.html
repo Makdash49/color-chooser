@@ -119,6 +119,10 @@
       return d;
     }
 
+    $(document).ready(function(){
+        doit();
+    });
+
 
     $(document).on('submit', '.commentForm', function(){
         svg.selectAll("*").remove();
