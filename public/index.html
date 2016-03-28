@@ -124,12 +124,12 @@
       return d;
     }
 
-    setInterval(function() {
-      console.log("Just do it!");
-      svg.selectAll("*").remove();
-      doit();
-      console.log("did you do it?")
-    }, 2000);
+
+    $(document).on('submit', '.commentForm', function(){
+        svg.selectAll("*").remove();
+        doit();
+
+    });
 
 
 
