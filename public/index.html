@@ -85,7 +85,7 @@
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("comments.json", function(error, data) {
+    var doit = function() { d3.json("comments.json", function(error, data) {
       if (error) throw error;
 
       x.domain(data.map(function(d) { return d.text; }));
@@ -115,12 +115,20 @@
           .attr("y", function(d) { return y(d.author); })
           .attr("height", function(d) { return height - y(d.author); })
           .attr("fill", function(d) {return d.text;});
-    });
+    })}
 
     function type(d) {
       d.author = +d.author;
       return d;
     }
+
+    setInterval(function() {
+      console.log("Just do it!");
+      doit();
+      console.log("did you do it?")
+    }, 2000);
+
+
 
     </script>
 
