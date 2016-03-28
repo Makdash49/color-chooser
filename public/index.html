@@ -58,6 +58,8 @@
       <a href="." class="button">Update Graph</a>
     </h4>
 
+    <div class="graph">
+
     <script>
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -124,6 +126,7 @@
 
     setInterval(function() {
       console.log("Just do it!");
+      svg.selectAll("*").remove();
       doit();
       console.log("did you do it?")
     }, 2000);
@@ -131,6 +134,8 @@
 
 
     </script>
+
+    </div>
 
 
 
