@@ -3,7 +3,7 @@
 import React, {Component} from 'react'
 import {BarChart} from '../../src'
 
-var generalChartData = require('dsv?delimiter=\t!./data/letter.tsv')
+var generalChartData = require('dsv?delimiter=\t!letter.tsv')
 
 var chartSeries = [
     {
