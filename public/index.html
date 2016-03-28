@@ -117,11 +117,8 @@
     function type(d) {
       d.author = +d.author;
       return d;
-    }
+    };
 
-    $(document).ready(function(){
-        doit();
-    });
 
     $(document).on('submit', function(){
         svg.selectAll("*").remove();
