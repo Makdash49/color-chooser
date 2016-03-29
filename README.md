@@ -1,5 +1,5 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Color Chooser
+Color Chooser:  Count & Hue
 
-Enter your name and the name of a color or its code.
+Enter a quantity between 1 and 100 and the name of a color or a color code.
