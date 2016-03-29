@@ -216,3 +216,8 @@ ReactDOM.render(
       d.author = +d.author;
       return d;
     };
+
+
+    $( document ).ready(function() {
+      doit();
+});
