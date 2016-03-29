@@ -77,7 +77,6 @@ var CommentBox = React.createClass({
 
 var CommentList = React.createClass({
   render: function() {
-    console.log("last prop:", this.props.data[this.props.data.length - 1]);
     var commentNodes = this.props.data.map(function(comment) {
       return (
         <Comment author={comment.author} key={comment.id}>
@@ -85,7 +84,6 @@ var CommentList = React.createClass({
         </Comment>
       );
     });
-    console.log("commentNodes:", commentNodes)
     return (
       <div className="commentList">
         {commentNodes[commentNodes.length - 1]}
