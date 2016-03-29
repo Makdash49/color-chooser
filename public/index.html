@@ -125,8 +125,10 @@
 
 
     $(document).on('submit', function(){
+        setTimeout(function(){
         svg.selectAll("*").remove();
         doit();
+        }, 1000);
     });
 
     </script>
